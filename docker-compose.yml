@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    container_name: app
+    build: ./
+    ports:
+      - ${DOCKER_PORT}:${DOCKER_PORT}
+    env_file:
+      - .env
+    restart: always
+    volumes:
+      - ./logs_local:/app/build/logs
+    command: node /app/build/index.js

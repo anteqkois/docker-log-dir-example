@@ -1,0 +1,13 @@
+.env
+.env.prod
+.env.prod.build
+node_modules
+Dockerfile
+.gitlab-ci.yml
+deploy.yml
+docker-compose.yml
+hosts.prod
+hosts.stag
+build
+dist
+src/logs
